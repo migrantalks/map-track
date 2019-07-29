@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />  
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />  
+        <title>车辆运行轨迹</title>   
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script type="text/javascript" src="http://api.map.baidu.com/api?v=1.5&ak=6wsGRMi6lNMzZ9oaRgzTklYXjBMLhw8S"></script>
+        <script type="text/javascript" src="js/jquery.min.js"></script>  
+		<title>行车轨迹</title>
+	</head>
+	<body>
+	    <div id="container">
+	    	<div id="tarck_map"></div>
+	    	<div id="tarck_data">
+	    		<textarea id="tarck_axis" style="width: 300px;height: 300px;"></textarea>
+	    	  </br>  
+	    		<button onclick="drawTrack()">绘制轨迹</button>
+                <button onclick="clearTrack()">清空轨迹</button>
+                <button onclick="trackTotalDistance()" >总里程数</button>
+                <br/><br/>
+                <span id="tarck_distance"></span>
+	    	</div>
+	    </div>
+	</body>
+</html>
+<script type="text/javascript" src="js/index.js"></script>
